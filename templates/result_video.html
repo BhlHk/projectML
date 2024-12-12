@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat de la Détection</title>
+</head>
+<body>
+    <h1>Résultat de la Détection - Vidéo</h1>
+    <video controls width="640">
+        <source src="/uploads/{{ result_video }}" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture des vidéos.
+    </video>
+    <br><br>
+    <a href="/uploads/{{ result_video }}" download="{{ result_video }}">
+        <button>Télécharger la Vidéo Annotée</button>
+    </a>
+    <br><br>
+    <a href="/">Retour à l'Accueil</a>
+</body>
+</html>

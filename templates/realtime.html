@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détection en Temps Réel</title>
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+    button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+   }
+    button:hover {
+    background-color: #d32f2f;
+   }
+    </style>
+</head>
+<body>
+    <h1>Détection en Temps Réel</h1>
+    <img src="/video_feed" alt="Flux vidéo">
+    <form action="/stop_detection" method="post">
+        <button type="submit">Arrêter la Détection</button>
+    </form>
+    <a href="/">Retour à l'Accueil</a>
+</body>
+</html>

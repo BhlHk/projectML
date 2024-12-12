@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat de la Détection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Résultat de la Détection</h1>
+    <img src="/uploads/{{ result_image }}" alt="Résultat">
+      <!-- Bouton pour télécharger l'image annotée -->
+      <a href="/annotated/{{ result_image }}" download="{{ result_image }}">
+        <button>Télécharger l'Image Annotée</button>
+    </a>
+    
+    <!-- Lien pour retourner à l'accueil -->
+    <br><br>
+    <a href="/">Retour à l'Accueil</a>
+</body>
+</html>

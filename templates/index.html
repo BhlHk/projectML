@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détection d'Objets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        form {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Détection d'Objets</h1>
+
+    <h2>Choisissez une option</h2>
+    <form action="/realtime" method="get">
+        <button type="submit">Détection en Temps Réel</button>
+    </form>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <h3>Détection sur un Fichier (Image ou Vidéo)</h3>
+        <input type="file" name="file" accept="image/*,video/*" required>
+        <button type="submit">Analyser le Fichier</button>
+    </form>
+</body>
+</html>
