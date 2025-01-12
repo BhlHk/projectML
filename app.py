@@ -9,7 +9,7 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Charger le modèle YOLOv8s
-model = YOLO('yolov8s.pt')
+model = YOLO('best.pt')
 
 # Variable de contrôle pour arrêter la détection
 stop_detection = False
