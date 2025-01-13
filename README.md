@@ -1,7 +1,8 @@
-# Project Title
+# Object recognition in images with deep neural networks.
+Sign language detection (hand signs)
 
-Brief description of your project and its purpose.
 
+best.pt is our custom trained model that uses YOLOv8s architecture.
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
