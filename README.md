@@ -44,4 +44,6 @@ Follow these steps to set up your development environment:
    pip install -r requirements.txt
    ```
 please use this commande to run the project (execute app.py)
+```bash
 python app.py
+   ```
